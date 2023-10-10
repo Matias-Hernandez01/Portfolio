@@ -18,17 +18,17 @@
       <div class="logo">
         <a href="#">Matias</a>
       </div>
-      <nav id="nav">
+      <nav id="nav" class="responsive">
         <ul>
-          <li><a href="#inicio">INICIO</a></li>
-          <li><a href="#sobremi">SOBRE MI</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#curriculum">CURRICULUM</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contacto">CONTACTO</a></li>
+          <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+          <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+          <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+          <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+          <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+          <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
         </ul>
       </nav>
-      <div class="nav-responsive">
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
@@ -42,8 +42,9 @@
       <h1>Matias Hernandez</h1>
       <h2>Desarrollador de Software</h2>
       <div class="redes">
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/matiashernandez00/" target="_Blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/matias.dev/" target="_Blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </div>
@@ -454,7 +455,15 @@
     </div>
   </section>
 
-
+  <footer>
+    <a href="#inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a>
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/matiashernandez00/" target="_Blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/matias.dev/" target="_Blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
