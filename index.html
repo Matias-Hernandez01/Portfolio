@@ -123,10 +123,12 @@
         </div>
       </div>
 
-
-      <button>Descargar CV <i class="fa-solid fa-download"></i>
-        <span class="overlay"></span>
-      </button>
+      <a href="./Matias Nicolas Hernandez - CV.pdf" target="_Blank" class="download">
+        <button>Descargar CV
+          <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </a>
 
     </div>
 
@@ -426,13 +428,17 @@
       <!--FORMULARIO-->
       <div class="fila">
         <div class="col">
-          <input type="text" placeholder="Tú nombre">
-          <input type="text" placeholder="Numero telefónico">
-          <input type="text" placeholder="Dirección de correo electrónico">
-          <input type="text" placeholder="Tema">
-          <input type="text" placeholder="Tema">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-          <button>Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+          <p id="nombreError"></p>
+          <input id="nombre" type="text" name="nombre" value="" placeholder="Tú nombre">
+          <p id="numeroError"></p>
+          <input id="numero" type="number" value="" placeholder="Numero telefónico">
+          <p id="emailError"></p>
+          <input id="email" type="text" placeholder="Dirección de correo electrónico">
+          <p id="asuntoError"></p>
+          <input id="asunto" type="text" placeholder="Asunto">
+          <p id="mensajeError"></p>
+          <textarea id="mensaje" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+          <button id="enviar">Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
             <span class="overlay"></span>
           </button>
         </div>
