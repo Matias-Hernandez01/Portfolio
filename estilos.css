@@ -12,6 +12,10 @@ html{
   scroll-behavior: smooth;
 }
 
+.download{
+  text-decoration: none;
+}
+
 .contenedor-header{
   background: #1e2326;
   position: fixed;
