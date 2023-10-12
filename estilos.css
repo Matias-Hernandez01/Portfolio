@@ -772,8 +772,9 @@ footer .arriba {
     position: absolute;
     right: 0;
     top: 75px;
+    left: 100px;
     background-color: #252A2E;
-    width: 180px;
+    width: 250px;
   }
   nav.responsive ul{
     display: block;
@@ -839,3 +840,8 @@ footer .arriba {
   }
 
 }
+
+  .contacto .info{
+    display: none;
+  }
+
