@@ -9,6 +9,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Matias Hernandez</title>
   <link rel="stylesheet" href="estilos.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init( 'FNAn58CvB0aZg8FNr' )
+  </script>
 </head>
 
 <body>
@@ -338,10 +343,11 @@
           <div class="item izq">
             <h4>Instituto Domingo Faustino Sarmiento</h4>
             <span class="casa">Bachiller en Ciencias Sociales</span>
-            <span class="fecha">2023 - Actualmente</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eum perferendis ullam quae,
-              assumenda ducimus aperiam, amet blanditiis voluptatum odio maiores numquam incidunt. Nobis ullam in
-              adipisci tempore repudiandae expedita?</p>
+            <span class="fecha">2012 - 2019</span>
+            <p>Mi experiencia en la educación secundaria como Bachiller en Ciencias Sociales me brindó una sólida base
+              de conocimientos y valores fundamentales. Durante estos años, no solo adquirí un profundo entendimiento de
+              las ciencias sociales, sino que también cultivé habilidades cruciales para la vida, como la
+              responsabilidad, la organización y la resiliencia</p>
             <div class="conectori">
               <div class="circuloir"></div>
             </div>
@@ -350,9 +356,12 @@
             <h4>Tecnico Universitario en Desarrollo Web</h4>
             <span class="casa">Universidad Nacional de La Matanza</span>
             <span class="fecha">2023 - Actualmente</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eum perferendis ullam quae,
-              assumenda ducimus aperiam, amet blanditiis voluptatum odio maiores numquam incidunt. Nobis ullam in
-              adipisci tempore repudiandae expedita?</p>
+            <p>Actualmente, estoy cursando mi primer año en el programa de Técnico Universitario en Desarrollo Web.
+              Durante este tiempo, he desarrollado una base sólida en programación, diseño
+              web y desarrollo de aplicaciones. He trabajado en proyectos prácticos que me han permitido aplicar mis
+              conocimientos y mejorar mis habilidades. Mi objetivo a
+              largo plazo es convertirme en un desarrollador web altamente competente y contribuir al crecimiento de
+              proyectos web innovadores.</p>
             <div class="conectori">
               <div class="circuloir"></div>
             </div>
@@ -361,9 +370,9 @@
             <h4>Desarrollador Web Full Stack</h4>
             <span class="casa">Henry - Bootcamp</span>
             <span class="fecha">2022 - 2023</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eum perferendis ullam quae,
-              assumenda ducimus aperiam, amet blanditiis voluptatum odio maiores numquam incidunt. Nobis ullam in
-              adipisci tempore repudiandae expedita?</p>
+            <p>Durante el bootcamp de Soy Henry, adquirí una sólida formación en desarrollo web con un enfoque en el
+              stack PERN (PostgreSQL, Express.js, React, Node.js). Este programa intensivo de 7 meses ofreció un enfoque
+              teórico y práctico, de más de 800 horas, para desarrollar habilidades técnicas clave en la industria.</p>
             <div class="conectori">
               <div class="circuloir"></div>
             </div>
@@ -376,9 +385,8 @@
             <h4>Consultor Experto - Frontend Developer</h4>
             <span class="casa">4Latam</span>
             <span class="fecha">2023 - Actualmente</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eum perferendis ullam quae,
-              assumenda ducimus aperiam, amet blanditiis voluptatum odio maiores numquam incidunt. Nobis ullam in
-              adipisci tempore repudiandae expedita?</p>
+            <p>Actualmente formo parte de 4Latam como consultor experto, donde brindo mis servicios como Desarrollador
+              Web Frontend</p>
             <div class="contectord">
               <div class="circulod"></div>
             </div>
@@ -388,9 +396,13 @@
             <h4>Telemarketer</h4>
             <span class="casa">Alcanzo SA</span>
             <span class="fecha">2022 - 2022</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eum perferendis ullam quae,
-              assumenda ducimus aperiam, amet blanditiis voluptatum odio maiores numquam incidunt. Nobis ullam in
-              adipisci tempore repudiandae expedita?</p>
+            <p>Gracias a mi paso por el trabajo de telemarketing he
+              desarrollado y adquirido habilidades clave, como la
+              proactividad, el trabajo en equipo, la comunicación eficaz,
+              el cumplimiento de objetivos y la responsabilidad, que son
+              fundamentales para mi crecimiento profesional y para
+              aportar valor en futuras oportunidades laborales.
+            </p>
             <div class="contectord">
               <div class="circulod"></div>
             </div>
@@ -428,19 +440,21 @@
       <!--FORMULARIO-->
       <div class="fila">
         <div class="col">
-          <p id="nombreError"></p>
-          <input id="nombre" type="text" name="nombre" value="" placeholder="Tú nombre">
-          <p id="numeroError"></p>
-          <input id="numero" type="number" value="" placeholder="Numero telefónico">
-          <p id="emailError"></p>
-          <input id="email" type="text" placeholder="Dirección de correo electrónico">
-          <p id="asuntoError"></p>
-          <input id="asunto" type="text" placeholder="Asunto">
-          <p id="mensajeError"></p>
-          <textarea id="mensaje" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-          <button id="enviar">Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-            <span class="overlay"></span>
-          </button>
+          <form id="form">
+            <p id="nombreError"></p>
+            <input id="from_name" type="text" name="from_name" placeholder="Tú nombre">
+            <p id="numeroError"></p>
+            <input id="numero" type="number" placeholder="Numero telefónico">
+            <p id="emailError"></p>
+            <input id="email_id" name="email_id" placeholder="Dirección de correo electrónico">
+            <p id="asuntoError"></p>
+            <input id="asunto" name="asunto" type="text" placeholder="Asunto">
+            <p id="mensajeError"></p>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button name="enviar" id="enviar" disabled="true">Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span id="span" class="overlay"></span>
+            </button>
+          </form>
         </div>
 
         <div class="col">
@@ -469,6 +483,8 @@
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </footer>
+
+
   <script src="script.js"></script>
 </body>
 
