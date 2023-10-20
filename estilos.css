@@ -208,7 +208,8 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: 0.7s;
+  animation: intereses 8s linear infinite;
 }
 
 .sobremi .fila .col .contenedor-intereses .interes:hover{
@@ -319,61 +320,61 @@ html{
 
 .skills .skill .javascript{
   width: 0%;
-  animation: 2s javascript forwards;
+  animation: 3s javascript forwards infinite;
 }
 
 .skills .skill .typescript{
   width: 0%;
-  animation: 2s typescript forwards;
+  animation: 3s typescript forwards infinite ;
 }
 .skills .skill .htmlcss{
   width: 0%;
-  animation: 2s htmlcss forwards;
+  animation: 3s htmlcss forwards infinite;
 }
 .skills .skill .reactjs{
   width: 0%;
-  animation: 2s reactjs forwards;
+  animation: 3s reactjs forwards infinite;
 }
 .skills .skill .reactnative{
   width: 0%;
-  animation: 2s reactnative forwards;
+  animation: 3s reactnative forwards infinite;
 }
 
 .skills .skill .redux{
   width: 0%;
-  animation: 2s redux forwards;
+  animation: 3s redux forwards infinite;
 }
 .skills .skill .express{
   width: 0%;
-  animation: 2s express forwards;
+  animation: 3s express forwards infinite;
 }
 .skills .skill .tailwind{
   width: 0%;
-  animation: 2s tailwind forwards;
+  animation: 3s tailwind forwards infinite;
 }
 .skills .skill .comunicacion{
   width: 0%;
-  animation: 2s comunicacion forwards;
+  animation: 3s comunicacion forwards infinite;
 }
 .skills .skill .creatividad{
   width: 0%;
-  animation: 2s creatividad forwards;
+  animation: 3s creatividad forwards infinite;
 }
 .skills .skill .dedicacion{
   width: 0%;
-  animation: 2s dedicacion forwards;
+  animation: 3s dedicacion forwards infinite;
 }
 .skills .skill .responsable{
   width: 0%;
-  animation: 2s responsable forwards;
+  animation: 3s responsable forwards infinite;
 }
 .skills .skill .analitico{
   width: 0%;
-  animation: 2s analitico forwards;
+  animation: 3s analitico forwards infinite;
 }
 .skills .skill .autogestivo{
   width: 0%;
-  animation: 2s autogestivo forwards;
+  animation: 3s autogestivo forwards infinite;
 }
 
 .curriculum{
@@ -758,7 +759,23 @@ footer .arriba {
   0%{ width: 0;}
   100%{width: 60%;}
 }
-
+@keyframes intereses {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 @media screen and (max-width:980px) {
   nav{
