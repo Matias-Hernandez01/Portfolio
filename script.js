@@ -17,8 +17,16 @@ const errors = {
 };
 let enviar = document.getElementById('enviar');
 let span = document.getElementById('span');
-function seleccionar() {
-  document.getElementById('nav').classList = '';
+function seleccionar(sectionId) {
+  const enlaces = document.querySelectorAll('#nav ul li a');
+
+  enlaces.forEach((enlace) => {
+    enlace.style.color = 'white';
+  });
+
+  const enlaceActivo = document.querySelector(`[href="#${sectionId}"]`);
+  enlaceActivo.style.color = '#1CB698';
+
   menuVisible = false;
 }
 
@@ -133,3 +141,16 @@ function disabled() {
 enviar.style.color = 'slategray';
 enviar.style.border = '2px solid slategray';
 span.style.display = 'none';
+
+window.addEventListener('scroll', function () {
+  const skillsSection = document.getElementById('skills');
+  const skillsLink = document.querySelector('a[href="#skills"]');
+
+  if (isElementInViewport(skillsSection)) {
+    // La sección de habilidades está en la vista
+    const nav = this.document.getElementById('nav');
+    nav.li.style.color = '#1CB698'; // Aplica un estilo resaltado al enlace
+  } else {
+    // La sección de habilidades no está en la vista
+  }
+});
