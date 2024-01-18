@@ -118,12 +118,21 @@ document.getElementById('form').addEventListener('submit', function (event) {
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
       alert('Sent!');
+      formCleaner();
     },
     (err) => {
       alert(JSON.stringify(err));
     }
   );
 });
+
+function formCleaner() {
+  let name = (document.getElementById('from_name').innerHTML = '');
+  email.textContent = '';
+  numero.textContent = '';
+  mensaje.textContent = '';
+  return name;
+}
 
 function disabled() {
   if (Object.values(errors).includes('Error')) {
