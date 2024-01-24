@@ -556,6 +556,12 @@ html{
   margin-bottom: 20px; 
   transition: 1s;
 }
+
+.portfolio .galeria .proyecto .overlay a{
+  color:"white";
+  text-decoration: none;
+}
+
 .portfolio .galeria .proyecto .overlay:hover{
   opacity: 1;
 }
